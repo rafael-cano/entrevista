@@ -1,0 +1,131 @@
+APIs Details:
+
+
+########################################
+Method: GET
+URL: /api/candidate/list_candidates/
+Query Strings:
+    name (optional): filter list based on name
+########################################
+Method: GET
+URL: /api/candidate/candidate_details/
+Query Strings:
+    id (necessary): provides ID for object
+########################################
+Method: POST
+URL: /api/candidate/create_candidate/
+Query Strings:
+    None
+Payload:
+    {
+        "name": "Text"
+    }
+########################################
+Method: DELETE
+URL: /api/candidate/delete_candidate/
+Query Strings:
+    id (necessary): provides ID for object
+########################################
+Method: PUT
+URL: /api/candidate/update_candidate/
+Query Strings:
+    id (necessary): provides ID for object
+Payload:
+    {
+        "name": "Text"
+    }
+########################################
+Method: GET
+URL: /api/team/list_teams/
+Query Strings:
+    name (optional): filter list based on name
+########################################
+Method: GET
+URL: /api/team/team_details/
+Query Strings:
+    id (necessary): provides ID for object
+########################################
+Method: POST
+URL: /api/team/create_team/
+Query Strings:
+    None
+Payload:
+    {
+        "name": "Text"
+    }
+########################################
+Method: DELETE
+URL: /api/team/delete_team/
+Query Strings:
+    id (necessary): provides ID for object
+########################################
+Method: PUT
+URL: /api/team/update_team/
+Query Strings:
+    id (necessary): provides ID for object
+Payload:
+    {
+        "name": "Text"
+    }
+########################################
+Method: GET
+URL: /api/selection_process/list_selection_processs/
+Query Strings:
+    name (optional): filter list based on name
+########################################
+Method: GET
+URL: /api/selection_process/selection_process_details/
+Query Strings:
+    id (necessary): provides ID for object
+########################################
+Method: POST
+URL: /api/selection_process/create_selection_process/
+Query Strings:
+    None
+Payload:
+    {
+        "name": "Text",
+        "teams": [1,2]
+    }
+########################################
+Method: DELETE
+URL: /api/selection_process/delete_selection_process/
+Query Strings:
+    id (necessary): provides ID for object
+########################################
+Method: PATCH
+URL: /api/selection_process/update_selection_process/
+Query Strings:
+    id (necessary): provides ID for object
+Payload:
+    {
+        "name": "Text",
+        "teams": [1,2]
+    }
+########################################
+Method: PATCH
+URL: /api/selection_process/selection_process_insert_candidate/
+Query Strings:
+    id (necessary): provides ID for object
+Payload:
+    {
+        "candidate_id": 1,
+        "team_id": 1,
+        "contribution": 30 
+    }
+########################################
+Method: PATCH
+URL: /api/selection_process/selection_process_remove_candidate/
+Query Strings:
+    id (necessary): provides ID for object
+Payload:
+    {
+        "candidate_id": 1,
+        "team_id": 1,
+    }
+########################################
+Method: GET
+URL: /api/selection_process/approved_candidates/
+Query Strings:
+    id (necessary): provides ID for object
+########################################
